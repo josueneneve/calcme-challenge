@@ -1,0 +1,27 @@
+package com.josueneneve.calcmetest.config;
+
+import java.util.Arrays;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.CommandLineRunner;
+
+import com.josueneneve.calcmetest.domain.User;
+import com.josueneneve.calcmetest.repository.UserRepository;
+
+public class Instantiation implements CommandLineRunner {
+
+	@Autowired
+	private UserRepository userReposiroty;
+
+	@Override
+	public void run(String... arg0) throws Exception {
+
+		userReposiroty.deleteAll();
+
+		User maria = new User(null, "Maria Brown", "maria@gmail.com", "41999999999");
+		User alex = new User(null, "Alex Green", "alex@gmail.com", "41999999999");
+		User bob = new User(null, "Bob Grey", "bob@gmail.com", "41999999999");
+
+		userReposiroty.save(Arrays.asList(maria, alex, bob));
+	}
+}

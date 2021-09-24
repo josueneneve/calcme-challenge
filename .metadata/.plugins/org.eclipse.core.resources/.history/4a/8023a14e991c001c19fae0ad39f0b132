@@ -1,0 +1,20 @@
+package com.josueneneve.calcmetest.dto;
+
+import com.josueneneve.calcmetest.domain.User;
+
+public class UserDTO {
+
+	private String id;
+	private String name;
+	private String email;
+	private String phone;
+	
+	public UserDTO() {}
+	
+	public UserDTO(User obj) {
+		id = obj.getId();
+		name = obj.getName();
+		email = obj.getEmail();
+		phone = obj.getPhone();
+	}
+}

@@ -1,0 +1,5 @@
+package com.josueneneve.backend.resources;
+
+public class UserResource {
+
+}

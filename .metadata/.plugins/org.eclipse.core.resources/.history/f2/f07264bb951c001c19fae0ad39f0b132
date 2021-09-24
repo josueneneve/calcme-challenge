@@ -1,0 +1,5 @@
+package com.josueneneve.calcmetest.repository;
+
+public interface UserRepository {
+
+}

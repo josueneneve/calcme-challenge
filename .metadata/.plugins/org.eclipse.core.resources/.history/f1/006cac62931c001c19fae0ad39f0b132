@@ -1,0 +1,5 @@
+package com.josueneneve.calcmetest.resources;
+
+public class UserResource {
+
+}

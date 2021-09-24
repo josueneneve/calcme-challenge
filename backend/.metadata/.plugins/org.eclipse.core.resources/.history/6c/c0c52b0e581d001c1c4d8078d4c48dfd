@@ -1,0 +1,5 @@
+package com.josueneneve.backend.dto;
+
+public class UserDTO {
+
+}

@@ -1,0 +1,5 @@
+package com.josueneneve.calcmetest.services.exception;
+
+public class ObjectNotFoundException {
+
+}

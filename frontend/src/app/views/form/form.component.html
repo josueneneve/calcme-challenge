@@ -1,0 +1,21 @@
+<section>
+  <div class="login">
+    <h1>Calcme</h1>
+    <span>Crie um usuário</span>
+    <form [formGroup]="checkoutForm" (ngSubmit)="onSubmit()">
+      <mat-form-field appearance="fill">
+        <mat-label>Digite seu nome</mat-label>
+        <input matInput [(ngModel)]="checkoutForm.value.name"  formControlName="name" >
+      </mat-form-field>
+      <mat-form-field appearance="fill">
+        <mat-label>Digite seu e-mail</mat-label>
+        <input matInput [(ngModel)]="checkoutForm.value.email"  formControlName="email" >
+      </mat-form-field>
+      <mat-form-field appearance="fill">
+        <mat-label>Digite seu telefone</mat-label>
+        <input matInput [(ngModel)]="checkoutForm.value.telephone"  formControlName="telephone" >
+      </mat-form-field>
+      <button mat-flat-button type="submit" color="primary">Criar</button>
+    </form>
+  </div>
+</section>
